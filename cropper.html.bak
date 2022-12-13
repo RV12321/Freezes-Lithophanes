@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Freeze's Lithophanes</title>
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css"/>
+		<!--<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.4/cropper.min.css"
+		/>
+		
+		<!--<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+		/>-->
+		
+		<script src="https://kit.fontawesome.com/c608859019.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/0.8.1/cropper.min.js"></script>
+	
+	</head>
+	
+	<body>
+		<header class = "header">	
+			<nav class="nav" style="border-bottom:#000000 solid medium">
+				<img src="img/logo.jpg" class="logo" style="float:left">
+				<ul class="nav__list">
+					<li> <a href="#home">Home</a></li>
+					<li> <a href="ordernow.html">Order Now</a></li>
+					<li> <a href="whatido.html">What I Do</a></li>
+					<li> <a href="contactme.html">Contact Me</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+	
+		<div class="container">
+			<h1 class="text-center"> Crop Image in JavaScript </h1>
+			<div class="form-group container">
+				<label for="file">Upload Image File:</label>
+				<input class="form-control" type="file" id="file-input" required accept="image/*">
+			</div>
+			
+			<div class="box-2">
+				<div class="result"></div>
+			</div>
+			
+			<div class="box-2 img-result hide">
+				<img src="" alt="" class="cropped">
+			</div>
+			
+			<div class="box">
+				<div class="options hide">
+					<label for="width">Width</label>
+					<input type="number" class="img-w" value="300" min="100" max="1200">
+				</div>
+				<button class="btn save hide">Save</button>
+				
+				<a href="" class="btn download">Download</a>
+			</div>
+		</div>
+		
+		<!-- Footer -->
+		<footer class = "footer">
+            <p class="footer__link"><a class="social-list__link" href="mailto:freeze3dp@gmail.com">freeze3dp@gmail.com</p></a>
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="https://www.instagram.com/freezes_lithophanes/" target="_blank"><i class="fa-brands fa-instagram"></i></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="mailto:freeze3dp@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href=""><i class="fa-brands fa-etsy"></i></a></li>
+				<li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com/freezeslithophanes/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
+        </footer>
+		
+		<script src="index.js"></script>
+	</body>
+	
