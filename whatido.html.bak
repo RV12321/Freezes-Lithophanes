@@ -5,11 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Freeze's Lithophanes</title>
 		<link rel="stylesheet" href="style.css">
-		
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/c608859019.js" crossorigin="anonymous"></script>
 	</head>
 	
 	<body>
@@ -18,44 +18,63 @@
 				<img src="img/logo.jpg" class="logo" style="float:left">
 				<ul class="nav__list">
 					<li> <a href="index.html">Home</a></li>
-					<li>Order Now!</li>
-					<li>What I Do</li>
-					<li>Nav</li>
+					<li> <a href="ordernow.html">Order Now</a></li>
+					<li> <a href="whatido.html">About Me</a></li>
+					<li> <a href="contactme.html">Contact Me</a></li>
 				</ul>
 			</nav>
 		</header>
 		
-		<section class="whatido">
-			<h2 class="whatido__title" style="border-bottom:#000000 solid medium">Insert Title</h2>
+		<section class="section-class" >
+			<h1 class="title" style="border-bottom:#000000 solid medium; font-weight: normal;" >About Me</h1>
 			<div class="services">
 				<div class="service">
-					<img src="img/pic3.jpg" style="width:200px">
+					<img src="img/printer.jpg" width="200" height="200" style="border-radius:50%">
 				</div>
 				
 				<div class="service">
-					<img src="img/pic4.jpg" style="width:200px">
+					<img src="img/faceshield.jpg"  style="border-radius:50%">
 				</div>
 				
 				<div class="service">
-					<img src="img/pic2.jpg" style="width:200px">
+					<img src="img/supplies.jpg" width="200" height="200" style="border-radius:50%">
 				</div>
+			</div>
+			<div id=about-me-p>
+				<p class="whatido__p">
+				My name Is Tanner Freeze and I am the owner and founder of Freeze’s Lithophanes. I began My journey in 3D printing back in 2016 
+				when I signed up for a drafting class during my sophomore year at Central Cabarrus High School. I learned from my teacher how to 
+				take my ideas and turn them into a 3d model on the computer and the next year I would start using 3D printers! Before I started 
+				the second Drafting class and using 3d Printers, I was given my first printer for Christmas in 2018. Over the next couple years 
+				I used 3D Printing as a hobby and got really good at it. 
+				</p>
+				<p class="whatido__p">
+				Fast forward to 2020, I went to college at Embry Riddle Aeronautical University to study Aerospace Engineering then Covid Hit. 
+				I was then given All the time I wanted to do the things i Loved. I then heard about PPE (Personal Protective Equipment) shortages 
+				in hospitals and other places where there were doctors, and nurses fighting on the front lines. I decided to do something about it. 
+				I ordered a second printer and I started printing face shields and donating them to hospitals, nursing homes, and anywhere else that 
+				needed them. Thanks to my Mom, my story then went Viral and People wanted to know what they could do to help. Donations then started 
+				pouring in, allowing me to purchase a third printer, and all the filament that was required to produce the amount of face shields I 
+				was producing daily. I ended up donating over 500 face shields in the time I was printing them, officially starting my 3D printing career. 
+				</p>
 				
+				<p class="whatido__p">
+				In September of 2020, I printed some of my first lithophanes and thanks to my family and friends Loving them and recommending I sell them 
+				I started to realize the potential and shifted my focus from printing models and toys to printing Lithophanes. As the years have passed I 
+				have learned the ins and outs of printing Lithophanes and have come up with my own ideas including the Litho-Frame. Still, I believe I have
+				just begun my journey and I'm very excited to see where this path leads!
+				</p>
 			</div>
 		</section>
 		
-		<section class="whatido">
-			<h2 class="whatido__title" style="border-bottom:#000000 solid medium">What I Do</h2>
-			
-			<p class="whatido__p">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-			in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-			sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		</section>
-		
-		<section class="testimonials">
-			
-		</section>
+		<footer class = "footer">
+            <p class="footer__link">Where To Find Me</p>
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="https://www.instagram.com/freezes_lithophanes/" target="_blank"><i class="fa-brands fa-instagram"></i></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="mailto:freeze3dp@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href=""><i class="fa-brands fa-etsy"></i></a></li>
+				<li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com/freezeslithophanes/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
+		</footer>
 	
 	</body>
