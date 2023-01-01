@@ -33,7 +33,7 @@
 				</div>
 				
 				<div class="service">
-					<img src="img/faceshield.jpg"  style="border-radius:50%">
+					<img src="img/faceshield.jpg" style="aspect-ratio: 1109/1319; height: 200px; border-radius:50%">
 				</div>
 				
 				<div class="service">
@@ -68,7 +68,7 @@
 		</section>
 		
 		<footer class = "footer">
-            <p class="footer__link">Where To Find Me</p>
+            <p class="footer__link">Where To Find Us</p>
             <ul class="social-list">
                 <li class="social-list__item"><a class="social-list__link" href="https://www.instagram.com/freezes_lithophanes/" target="_blank"><i class="fa-brands fa-instagram"></i></i></a></li>
                 <li class="social-list__item"><a class="social-list__link" href="mailto:freeze3dp@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>

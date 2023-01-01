@@ -19,8 +19,8 @@
 				<ul class="nav__list">
 					<li> <a href="index.html">Home</a></li>
 					<li> <a href="ordernow.html">Order Now</a></li>
-					<li> <a href="whatido.html">About Me</a></li>
-					<li> <a href="contactme.html">Contact Me</a></li>
+					<li> <a href="whatido.html">About Us</a></li>
+					<!--<li> <a href="contactme.html">Contact Me</a></li>-->
 				</ul>
 			</nav>
 		</header>
@@ -28,16 +28,25 @@
 		
 		<section class="home__intro">
 			<!--<img src="img/pic1.jpg" class="intro__img">-->
-			<h1 class="intro__header">Freeze's Lithophanes</h1>
-			<h2 class="intro__subtitle">3-D Printed Lithophanes</h2>
+			<div class="intro__header">
+				<h1 class="main-title">Freeze's Lithophanes</h1>
+			</div>
+			<!--<h2 class="intro__subtitle">3-D Printed Lithophanes</h2>-->
 			<!--<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>-->
 		</section>
 		
-		<section class="whatido">
-			<!--<h2 class="whatido__title" style="border-bottom:#000000 solid medium">Insert Title</h2>-->
+		<section class="examples">
+			<h2 class="title" style="border-bottom:#000000 solid medium; text-align: center">What Is A Lithophane?</h2>
+			<p style="text-align: center; margin-left: 20%; margin-right: 20%; margin-top: 50px">
+				A Lithophane is a 2D image that is converted into a 3D black and white image that can be 3D-Printed on a 3D-Printer. 
+				Once it is completed, you can shine a source of light behind it and it will display the original 2D image!
+			</p>
+
+			<h3 style="text-align: center;">Here's What We Offer:</h3>
+			
 			<div class="services">
 				<div class="service">
 					<h3 style="text-align:center">Nightlights</h3>
@@ -45,21 +54,25 @@
 				</div>
 				
 				<div class="service">
-					<h3 style="text-align:center">Frames</h3>
+					<h3 style="text-align:center">Litho-Frames</h3>
 					<img src="img/frame.jpg" width="200" height="200" style="border-radius:50%">
 				</div>
 				
 				<div class="service">
 					<h3 style="text-align:center">Ornaments</h3>
-					<img src="img/ornament.jpg" width="200" height="200" style="border-radius:50%">
+					<img  src="img/ornament.jpg" width="200" height="200" style="border-radius:50%">
 				</div>
 				<div class="service">
 					<h3 style="text-align:center">Freestanding</h3>
-					<img src="img/nightlight.jpg" width="200" height="200" style="border-radius:50%">
+					<img src="img/freestanding.jpg" width="200" height="200" style="border-radius:50%;">
 				</div>
 				<!--<img src="img/light.png">-->
+
 			</div>
-			<h4 style="text-align: center">Perfect gift for your loved ones blah blah blah</h4>
+
+			<a href="ordernow.html">
+			<button style="margin-bottom: 40px" class="btn">Order Now!</button>
+			</a>
 		</section>
 		
 		<section class="testimonials">
@@ -70,8 +83,8 @@
 				<div class="row">	
 					<div class="col">
 						<div class="testimonial">
-							<img src="img/printer.jpg">
-							<div class="name">Full name</div>
+							<img src="img/anthonypic.jpg">
+							<div class="name">Anthony S</div>
 							<div class="stars">
 								<i class="fa-solid fa-star"></i>
 								<i class="fa-solid fa-star"></i>
@@ -79,19 +92,21 @@
 								<i class="fa-solid fa-star"></i>
 								<i class="fa-solid fa-star"></i>
 							</div>
-							
 							<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-							exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								I received a lithoframe from tanner and I must say I AM IMPRESSED!! The image is 
+								so clear and shines so beautifully when the light is on. Every time I walk by or see 
+								it out of the corner of my eye I can't help but smile. <span id="dots">...</span><span id="more">The quality is fantastic!!! I will be 
+								telling everyone that sees it where I got it and would recommend Tanners lithoframes to all. </span>
 							</p>
+
+							<button onclick="readMore()" class="btn readmore" id="myBtn">Read more</button>
 						</div>
 					</div>
 					
 					<div class="col">
 						<div class="testimonial">
-							<img src="img/printer.jpg">
-							<div class="name">Full name</div>
+							<img src="img/andypic.jpg">
+							<div class="name">Andy V</div>
 							<div class="stars">
 								<i class="fa-solid fa-star"></i>
 								<i class="fa-solid fa-star"></i>
@@ -101,17 +116,21 @@
 							</div>
 							
 							<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-							exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								My wife and I have a tradition to give each other a new ornament for our Christmas tree each year.  
+								This year I wanted to find something both unique, and personal, to memorialize our first full year 
+								in our new home. <span id="dots2">...</span><span id="more2"> I don’t know how he did it but Tanner turned a recent photo of my wife and me  in 
+								our back yard into a beautiful 3D relief !  It turned out better than I could have imagined.    Now I have a new tradition - 
+								bringing photo memories to life every year. </span>
 							</p>
+
+							<button onclick="readMore2()" class="btn readmore" id="myBtn2">Read more</button>
 						</div>
 					</div>
 					
 					<div class="col">
 						<div class="testimonial">
-							<img src="img/printer.jpg">
-							<div class="name">Full name</div>
+							<img src="img/johnpic.jpg">
+							<div class="name">John C</div>
 							<div class="stars">
 								<i class="fa-solid fa-star"></i>
 								<i class="fa-solid fa-star"></i>
@@ -121,10 +140,12 @@
 							</div>
 							
 							<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-							incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-							exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								My wife and I recently received a lithoframe from Freeze's Lithophanes featuring a favorite picture of us. 
+								The backlit 3D effect is beautiful. The handmade craftsmanship is outstanding. It instantly became a conversation 
+								piece. <span id="dots3">...</span><span id="more3"> A truly wonderful way to enjoy a favorite picture. </span>
 							</p>
+
+							<button onclick="readMore3()" class="btn readmore" id="myBtn3">Read more</button>
 						</div>
 					</div>
 				</div>
@@ -133,7 +154,7 @@
 		
 		<!-- Footer -->
 		<footer class = "footer">
-            <p class="footer__link">Where To Find Me</p>
+            <p class="footer__link">Where To Find Us</p>
             <ul class="social-list">
                 <li class="social-list__item"><a class="social-list__link" href="https://www.instagram.com/freezes_lithophanes/" target="_blank"><i class="fa-brands fa-instagram"></i></i></a></li>
                 <li class="social-list__item"><a class="social-list__link" href="mailto:freeze3dp@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>
@@ -142,5 +163,55 @@
             </ul>
 		</footer>
 		
-		<script src="index.js"></script>
+		<script>
+			function readMore() {
+				var dots = document.getElementById("dots");
+				var moreText = document.getElementById("more");
+				var btnText = document.getElementById("myBtn");
+
+				if (dots.style.display === "none") {
+					dots.style.display = "inline";
+					btnText.innerHTML = "Read more";
+					moreText.style.display = "none";
+				} else {
+					dots.style.display = "none";
+					btnText.innerHTML = "Read less";
+					moreText.style.display = "inline";
+				}
+			}
+
+			function readMore2() {
+				var dots = document.getElementById("dots2");
+				var moreText = document.getElementById("more2");
+				var btnText = document.getElementById("myBtn2");
+
+				if (dots.style.display === "none") {
+					dots.style.display = "inline";
+					btnText.innerHTML = "Read more";
+					moreText.style.display = "none";
+				} else {
+					dots.style.display = "none";
+					btnText.innerHTML = "Read less";
+					moreText.style.display = "inline";
+				}
+			}
+
+			function readMore3() {
+				var dots = document.getElementById("dots3");
+				var moreText = document.getElementById("more3");
+				var btnText = document.getElementById("myBtn3");
+
+				if (dots.style.display === "none") {
+					dots.style.display = "inline";
+					btnText.innerHTML = "Read more";
+					moreText.style.display = "none";
+				} else {
+					dots.style.display = "none";
+					btnText.innerHTML = "Read less";
+					moreText.style.display = "inline";
+				}
+			}
+		</script>
+		
 	</body>
+

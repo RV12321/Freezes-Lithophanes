@@ -41,25 +41,24 @@
 			<div class="services">
 				<div class="service">
 					<h3 style="text-align:center">Nightlights</h3>
-					<img src="img/nightlight.jpg" width="200" height="200">
+					<img src="img/nightlight.jpg" width="200" height="200" style="border-radius:50%">
 				</div>
 				
 				<div class="service">
 					<h3 style="text-align:center">Frames</h3>
-					<img src="img/frame.jpg" width="200" height="200">
+					<img src="img/frame.jpg" width="200" height="200" style="border-radius:50%">
 				</div>
 				
 				<div class="service">
 					<h3 style="text-align:center">Ornaments</h3>
-					<img src="img/ornament.jpg" width="200" height="200">
+					<img src="img/ornament.jpg" width="200" height="200" style="border-radius:50%">
 				</div>
 				<div class="service">
 					<h3 style="text-align:center">Freestanding</h3>
-					<img src="img/nightlight.jpg" width="200" height="200">
+					<img src="img/nightlight.jpg" width="200" height="200" style="border-radius:50%">
 				</div>
 				<!--<img src="img/light.png">-->
 			</div>
-			<h4 style="text-align: center">Perfect gift for your loved ones blah blah blah</h4>
 		</section>
 		
 		<section class="testimonials">
@@ -133,7 +132,7 @@
 		
 		<!-- Footer -->
 		<footer class = "footer">
-            <p class="footer__link">Where To Find Me</p>
+            <p class="footer__link">Where To Find Us</p>
             <ul class="social-list">
                 <li class="social-list__item"><a class="social-list__link" href="https://www.instagram.com/freezes_lithophanes/" target="_blank"><i class="fa-brands fa-instagram"></i></i></a></li>
                 <li class="social-list__item"><a class="social-list__link" href="mailto:freeze3dp@gmail.com"><i class="fa-solid fa-envelope"></i></a></li>

@@ -39,7 +39,7 @@
 						data-item-price="14.99"
 						data-item-url="http://147.182.218.115/ordernow.html"
 						data-item-description="A description of the nightlights."
-						data-item-image="img/nightlight.jpg"
+						data-item-image="img/"
 						data-item-name="Nightlight"
 						data-item-custom1-name="Product Type"
 						data-item-max-quantity=1
@@ -66,9 +66,10 @@
 							data-item-image="img/frame.jpg"
 							data-item-name="LithoFrame"
 							data-item-custom1-name="Frame color"
-							data-item-custom1-options="Small|Medium|Large"
 							data-item-max-quantity=1
 							data-item-stackable="always"
+							data-item-custom1-options="Farmhouse|Burnt|Dark-stain|Light-stain|Blue-stain
+							|Black paint|White paint|Red-stain"
 							disabled>
 							Buy Now($39.99)
 						</button>
@@ -139,7 +140,6 @@
 							data-item-image="img/frame.jpg"
 							data-item-name="LithoFrame"
 							data-item-custom1-name="Frame color"
-							data-item-custom1-options="Small|Medium|Large"
 							data-item-max-quantity=1
 							data-item-stackable="always"
 							disabled>

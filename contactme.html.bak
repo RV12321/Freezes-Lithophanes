@@ -20,7 +20,7 @@
 				<ul class="nav__list">
 					<li> <a href="index.html">Home</a></li>
 					<li> <a href="ordernow.html">Order Now</a></li>
-					<li> <a href="whatido.html">What I Do</a></li>
+					<li> <a href="whatido.html">About Me</a></li>
 					<li> <a href="contactme.html">Contact Me</a></li>
 				</ul>
 			</nav>
@@ -29,14 +29,35 @@
 		
 		<section class="contact-me">
 			<div class="contact-box">
-				<form class="contact-form">
-					<input type="text" class="input-field" placeholder="Your Name">
-					<input type="email" class="input-field" placeholder="Your Email">
-					<input type="text" class="input-field" placeholder="Subject">
-					<textarea type="text" class="input-field text-field" placeholder="Your Message"></textarea>
+				<form class="contact-form" onsubmit="sendEmail(); reset(); return false;">
+					<input type="text" class="input-field" id="name" placeholder="Your Name">
+					<input type="email" class="input-field" id="email" placeholder="Your Email">
+					<input type="text" class="input-field" id="subject" placeholder="Subject">
+					<textarea type="text" class="input-field text-field" id="body" placeholder="Your Message"></textarea>
 					<button class="submit-btn">Submit</button>
 				</form>
 			</div>
+			<script src="https://smtpjs.com/v3/smtp.js"></script>
+			<script>
+				function sendEmail() {
+					Email.send({
+						Host : "smtp.gmail.com",
+						Username : "ryanvoso@gmail.com",
+						Password : "FrayedEnds98?",
+						To : 'ryanvoso@gmail.com',
+						From : document.getElementById("email").value,
+						Subject : document.getElementById("subject").value,
+						Body: "Name: " + document.getElementById("name").value
+							+ "<br> Email: " + document.getElementById("email").value
+							+ "<br> Phone no: " + document.getElementById("name").value
+							+ "<br> Message: " + document.getElementById("body").value
+					})
+					.then(
+						console.log("yo")
+						/*message => alert("Message sent")*/
+					);
+				}
+			</script>
 		</section>
 		
 		<!-- Footer -->
@@ -49,6 +70,4 @@
 				<li class="social-list__item"><a class="social-list__link" href="https://www.facebook.com/freezeslithophanes/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
             </ul>
         </footer>
-		
-		<script src="index.js"></script>
 	</body>

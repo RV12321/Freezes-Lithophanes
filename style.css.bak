@@ -100,11 +100,10 @@ body {
 	position: relative;
 	height: 600px;
 	background-color: ghostwhite;
-	background: url(img/grainbw.jpg);
-	background-size: 900px;
+	background: url(img/headerpic4.jpg);
+	background-size: cover;
 	background-attachment: relative;
-	background-position: center;
-	margin: 0px;
+	background-position: center ;
 	color: white;
 	
 }
@@ -687,7 +686,7 @@ form label {
 .product-img {
 	height: 200px;
 	border-radius: 50%;
-}
+} 
 
 .cropped {
 	

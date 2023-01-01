@@ -4,7 +4,7 @@
 	--clr-light: #fff;
 	
 	--bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25);
-		  0.125em 0.125em 0.25em rgba(0,0,0,0.15);
+		    /*0.125em 0.125em 0.25em rgba(0,0,0,0.15);*/
 }
 
 html {
@@ -49,13 +49,6 @@ body {
 	background-color: white;
 }
 
-.title {
-	position: relative;
-	/*right: 950px;
-	top: 70px;*/
-
-}
-
 .logo {
 	position: relative;
 	z-index: 100;
@@ -85,56 +78,77 @@ body {
 	vertical-align: middle;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 900px) {
 	.nav {
-		
+		display: block;
+		text-align: right;
+
 	}
 	
 	.nav__list li {
-		margin: 20px;
+		font-size: 1em;	
+		margin: 40px;
 	}
 }
 
-.home__intro {
+@media screen and (max-width: 600px) {
+	.nav {
+		display: block;
+		text-align: right;
+		
+		justify-content: left;
+	}
 	
+	.nav__list li {
+		font-size: .7em;
+		margin: 25px;
+	}
+}
+
+
+
+.home__intro {
 	position: relative;
 	height: 600px;
 	background-color: ghostwhite;
-	background: url(img/grainbw.jpg);
-	background-size: 900px;
+	background: url(img/headerpic5.jpg);
+	background-size: cover;
 	background-attachment: relative;
 	background-position: center;
-	margin: 0px;
+	width: 100%;
 	color: white;
+	margin-bottom: 50px;
+}
+
+header {
+	width: 100%;
 	
 }
 
-/*.intro__img {
-	position: relative;
-	text-align: center;
-	width: 225px;
-	height: 300px;
-	left: 1000px;
-	top: 50px;
-	box-shadow: var(--bs)
-}*/
-
 .intro__header {
-	text-align: center;
-	position: relative;
-	top: 30%;
-
+	height: 100%; 
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+	/*position: absolute;
+	height: 5;
+	width: 100%;*/
 }
 
-.intro__subtitle {
+.main-title {
+	text-align: center;
+}
+
+/*.intro__subtitle {
 	text-align: center;
 	position: relative;
 	color: white;
 	top:30%;
 	font-weight: bold;
-}
+}*/
 
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
 	.home__intro {
 		margin-right: -500px;
 	}
@@ -144,20 +158,22 @@ body {
 	}
 	
 	
-}
-
+}*/
 
 .services {
-	display: flex;
-	margin-left: 75px;
-	text-align: center;
+	display: grid;
+	/*margin-left: 75px;
+	margin: auto;
+	width: 50%;*/
+	justify-content: center;
 }
 
 .service {
 	margin: 25px;	
+	text-align: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
 	.services {
 		display: flex;
 		margin-left: 300px;
@@ -173,25 +189,24 @@ body {
 }
 
 .title {
-	margin-right: -500px;
+	/*margin-right: -500px;*/
+	text-align: center;
+}
+
+.section-class {
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 
 @media (min-width: 600px) {
-	.section-class {
-		text-align: center;
-		margin-top: 100px;
-		margin-bottom: 100px;
-	}
+	
 
 	.title {
-		margin-left: 600px;
-		margin-right: 600px;
+		 max-width: 50%;
+		 margin: auto;
+		
 	}
-}
-
-p {
-	/*margin-left: 200px;
-	margin-right: 200px;*/
 }
 
 .footer {
@@ -200,6 +215,7 @@ p {
 	text-align: center;
 	padding: 2.5em 0;
 	font-size: 1.25rem;
+	width: 100%;
 }
 
 .footer a { 
@@ -238,6 +254,12 @@ p {
 	}
 }
 
+.examples {
+	width: 100%;
+}
+
+
+
 .page {
 	margin: 1em auto;
 	max-width: 768px;
@@ -260,9 +282,9 @@ p {
 
 .box-2{
 	padding: 0.5em;
-	width: calc(100 % / 2 - 1em);
+	width: calc(100% / 2 - 1em);
 	margin: auto;
-	text-align: left;
+	text-align: center;
 	/*margin: 500px;
 	margin-top: 0em;
 	margin-bottom: 0em;
@@ -286,9 +308,10 @@ p {
 	border: 1px solid black;
 	padding: 0.5em 1em;
 	text-decoration: none;
-	margin: 0.8em 0.3em;
-	display: inline-block;
+	margin: 0 auto;
+	display: block;
 	cursor: pointer;
+	justify-content: center;
 }
 
 .hide {
@@ -300,6 +323,11 @@ p {
 }
 
 /*Contact Me*/
+
+.contact-me {
+	height: 700px;
+	background-color: white;
+}
 
 .contact-box {
 	width: 500px;
@@ -325,12 +353,31 @@ p {
 	border: 1px solid black;
 }
 
-@media(min-width: 600px) {
-	.contact-me {
-		height: 700px;
-		background-color: white;
+.submit-btn {
+	position: relative;
+	left: 175px;
+	top: 10px;
+}
+
+@media(max-width: 600px) {
+	.contact-box {
+		width:300px;
+		height: 400px;
 	}
-	
+
+	.input-field {
+		width: 200px;
+		height: 25px;
+		margin-bottom: -15px;
+	}
+
+	.submit-btn {
+		display: block;
+		position: relative;
+		top: 15px;
+		left: 0px;
+		margin: auto;
+	}
 	
 }
 
@@ -339,11 +386,7 @@ p {
 	padding-top: 10px;
 }
 
-.submit-btn {
-	position: relative;
-	left: 175px;
-	top: 10px;
-}
+
 
 /*What I Do*/
 
@@ -359,7 +402,7 @@ p {
  */
 form input[type="radio"] {
 	float: left; 
-	width=20px; 
+	width: 20px; 
 	margin-right: 10px;
 	}
 form label {
@@ -367,10 +410,7 @@ form label {
 	width: 100px; 
 	display: inline;
 }
- 
-.form-group {
-	display: flex;
-}
+
  
  .cropper-container{
 	 overflow: none;
@@ -671,23 +711,45 @@ form label {
 	
 }
 
-.container {
-	text-align: center;
-	margin: auto;
-}
 
 .form-group {
-	margin: auto;
-	width: 50%;
+	width: 30%;
 	border: 3px solid black;
-	padding: 10px;
+	/*padding: 10px;*/
 	margin-bottom: 106px;
+	margin-top: 100px;
+	margin: auto;
+	
 }
 
+@media screen and (max-width: 900px) {
+	.form-group {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.form-group {
+		width: 80%;
+	}
+}
+
+.group {
+	margin-left: 125px;
+	margin: auto;
+}
+
+
 .product-img {
-	height: 200px;
 	border-radius: 50%;
 } 
+
+.radio-btns {
+	display: inline-block;
+	margin: auto;
+	visibility: hidden;
+	margin: 0px;
+}
 
 .cropped {
 	
@@ -695,19 +757,15 @@ form label {
 
 #about-me-p {
 	margin: auto;
-	width: 60%;
-	
+	width: 50%
+	/*width: 60%;
+	justify-content: center;*/
 }
 
-
-.whatido__p {
-	position: relative;
-	font-size: 1em;
-	font-family: 'Quicksand', sans-serif;
-	font-weight: bold;
-	text-align: center;
-	justify-content: center;
-	width: 900px;
+@media screen and (max-width: 900px) {
+	#about-me-p {
+		width: 80%
+	}
 }
 
 .testimonials {
@@ -727,7 +785,7 @@ form label {
 .border{ 
 	width: 160px;
 	height: 5px;
-	background: $6ab04c;
+	/*background: $6ab04c;*/
 	margin: 26px auto;
 }
 
@@ -778,4 +836,24 @@ form label {
 		flex: 100%;
 		max-width: 100%;
 	}
+}
+
+#more {
+	display: none;
+}
+
+#more2 {
+	display: none;
+}
+
+#more3 {
+	display: none;
+}
+
+.item_info {
+	text-align: center;
+}
+
+.form-control {
+	width: 200px;
 }
